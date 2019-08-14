@@ -22,7 +22,7 @@ class Artist
   end
 
   def genres
-    Genre.all.select{|genre| genre.artists == self}
+    Song.all.map{|song| song.genre}
   end
 
 
