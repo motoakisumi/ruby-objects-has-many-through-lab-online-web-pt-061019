@@ -17,6 +17,6 @@ class Genre
   end
 
   def artists
-    Artist.all.select{|artist| artist.genre == self}
+    Song.all.map{|song| song.artist)
   end
 end
