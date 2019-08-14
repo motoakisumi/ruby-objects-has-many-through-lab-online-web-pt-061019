@@ -16,6 +16,10 @@ class Patient
     Appointment.new(date, self, doctor)
   end
 
+  def appointments
+    Appointment.all.map{|app| app.doctor}
+  end
+
   def doctors
     Appointment.all.map{|app| app.doctor}
   end
