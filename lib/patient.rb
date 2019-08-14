@@ -19,5 +19,4 @@ class Patient
   def doctors
     Appointment.all.map{|app| app.doctor}
   end
-
 end
